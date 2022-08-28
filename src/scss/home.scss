@@ -1,0 +1,143 @@
+
+//Переменные
+$minWidth: 320px;
+$maxWidth: 1152;
+$maxWidthContainer: 856;
+$md1: $maxWidthContainer +12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+/////////////
+// =================================================
+
+/////////CONTENT
+
+// =================================================
+
+.page {
+}
+
+._container {
+
+}
+
+.wrapper {
+  
+}
+.bigelipse {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+  width: 80%;
+  max-width: $maxWidthContainer + px;
+    margin: 0 auto; 
+    @media (max-width: $md1 + px) {
+        max-width: 750px;
+    }
+    @media (max-width: $md2 + px) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+
+
+
+.slider__wrapper{
+  // position: absolute;
+  // display: contents;
+  // height: 50vh;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 15%;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.sun{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  // margin-top: 350px;
+  align-items: center;
+
+  @media (max-width: $md3 + px) {
+    justify-content: center;
+  }
+
+  img{
+    max-height: 30vh;
+  }
+
+  &__img{
+    // max-width: 30vw;
+    width: 50vw;
+    margin-top: 40px;
+  }
+
+  .heand__img{
+    @media (max-width: $md3 + px) {
+      display: none;
+  }
+  }
+}
+
+.kaf {
+  
+  // .kaf__list
+
+  &__list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+
+  // .kaf__link
+
+  &__link {
+    font-family: Romvel;
+    font-size: calc(24px + 16 * (100vw / 1280));
+    font-weight: normal;
+    color: gray;
+    text-transform: uppercase;
+    transition: color 0.3s ease 0s;
+    
+
+    &:hover{
+      color: red;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+
+.rombs{
+  width: 100%;
+  margin: 50px 0 50px 0;
+
+}
+
+.info {
+
+  // .info__list
+
+  &__list {
+    font-weight: bold;
+    font-size: 1.2em;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  // .info__link
+
+  &__link {
+    margin: 20px;
+    white-space: nowrap;
+  }
+}

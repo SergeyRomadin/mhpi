@@ -1,0 +1,77 @@
+// //Переменные
+// $minWidth: 320px;
+// $maxWidth: 1152;
+// $maxWidthContainer: 856;
+// $md1: $maxWidthContainer +12;
+// $md2: 991.98;
+// $md3: 767.98;
+// $md4: 479.98;
+// /////////////
+
+.header {
+  
+
+    a{
+        color: #fff;
+        font-family: Cuprum;
+    }
+  // .header__content
+
+  &__content {
+    
+  }
+
+  // .header__menu
+
+  &__menu {
+    
+  }
+}
+.menu {
+
+  // .menu__body
+
+  &__body {
+    // height: 100px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1vw;
+
+    ._container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo{
+      // margin-left: 100px;
+    }
+    .glaz{
+      // margin-right: 120px;
+    }
+    
+  }
+
+  // .menu__list
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+
+  // .menu__link
+
+  &__link {
+    margin: 10px;
+    white-space: nowrap;
+  }
+}
+
+
+
+
