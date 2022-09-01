@@ -14,12 +14,22 @@
     font-weight: normal;
     font-style: normal; 
 }
-@font-face {
-    font-family: "Romvel";
-    src: local('Romvel'), url('../fonts/Romvel.woff') format('woff'), url('../fonts/Romvel.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: "Romvel";
+//     src: local('Romvel'), url('../fonts/Romvel.woff') format('woff'), url('../fonts/Romvel.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: 'PaladinPCRus';
+// 	src: url('../fonts/paladinpcrus_medium.eot'); /* IE 9 Compatibility Mode */
+// 	src: url('../fonts/paladinpcrus_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+// 		url('../fonts/paladinpcrus_medium.woff2') format('woff2'), /* Super Modern Browsers */
+// 		url('../fonts/paladinpcrus_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+// 		url('../fonts/paladinpcrus_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+// 		url('../fonts/paladinpcrus_medium.svg#paladinpcrus_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+// }
 
 
 html, body {

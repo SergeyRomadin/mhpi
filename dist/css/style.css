@@ -44,6 +44,14 @@
   white-space: nowrap;
 }
 
+@font-face {
+  font-family: "PaladinPCRus";
+  src: url("../fonts/paladinpcrus_medium.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/paladinpcrus_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/paladinpcrus_medium.woff2") format("woff2"), url("../fonts/paladinpcrus_medium.woff") format("woff"), url("../fonts/paladinpcrus_medium.ttf") format("truetype"), url("../fonts/paladinpcrus_medium.svg#paladinpcrus_medium") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+
 .bigelipse {
   position: absolute;
   top: -5px;
@@ -101,9 +109,7 @@
 }
 
 .kaf__link {
-  font-family: Romvel;
   font-size: calc(24px + 1.25vw);
-  font-weight: normal;
   color: gray;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease 0s;
@@ -125,19 +131,135 @@
 
 .info__list {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: calc(24px - 0.625vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .info__link {
-  margin: 20px;
+  margin: 10px 20px;
   white-space: nowrap;
+  display: inline-block;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.info__link:hover {
+  color: red;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.info__all {
+  display: inline-block;
+  border: solid black 1px;
+  padding: 15px;
+  margin-top: 40px;
+  width: 250px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.info__all:hover {
+  color: red;
+  border: solid red 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.lenta {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1152px;
+}
+
+.lenta__label {
+  display: inline-block;
+  font-size: calc(24px + 0.625vw);
+  width: 30vw;
+  border-top: solid red 10px;
+}
+
+.lenta__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lenta__card {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+
+.lenta__card:hover span {
+  color: red;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.lenta__card span {
+  display: block;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+  font-size: calc(24px + 0.15625vw);
+}
+
+.lenta .fashion-show {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../img/fashion-show.jpg") center;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/fashion-show.jpg") center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/fashion-show.jpg") center;
+}
+
+.lenta .art-media {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../img/art-media.jpg") center;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/art-media.jpg") center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/art-media.jpg") center;
+}
+
+.lenta .card-news {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), red;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), red;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), red;
+}
+
+.lenta .card-news p {
+  margin: 50% 10% 0 10%;
+  text-align: left;
+  color: white;
+}
+
+.lenta .card-news p.time {
+  margin: 10% 0 10% 10%;
+  color: inherit;
+  font-weight: bold;
+}
+
+.lenta .card-concurs {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../img/concours.jpg") center;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/concours.jpg") center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/concours.jpg") center;
 }
 
 .slider {
@@ -211,13 +333,6 @@
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"), url("../fonts/Cuprum-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Romvel";
-  src: local("Romvel"), url("../fonts/Romvel.woff") format("woff"), url("../fonts/Romvel.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

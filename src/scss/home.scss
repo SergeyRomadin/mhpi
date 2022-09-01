@@ -1,4 +1,12 @@
-
+@font-face {
+	font-family: 'PaladinPCRus';
+	src: url('../fonts/paladinpcrus_medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/paladinpcrus_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/paladinpcrus_medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/paladinpcrus_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/paladinpcrus_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/paladinpcrus_medium.svg#paladinpcrus_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
 //Переменные
 $minWidth: 320px;
 $maxWidth: 1152;
@@ -94,15 +102,15 @@ $md4: 479.98;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+
   }
 
   // .kaf__link
 
   &__link {
-    font-family: Romvel;
+
     font-size: calc(24px + 16 * (100vw / 1280));
-    font-weight: normal;
+    // font-weight: normal;
     color: gray;
     text-transform: uppercase;
     transition: color 0.3s ease 0s;
@@ -127,17 +135,127 @@ $md4: 479.98;
 
   &__list {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: calc(24px - 8 * (100vw / 1280));
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+
+  
+
   }
 
   // .info__link
 
   &__link {
-    margin: 20px;
+    margin: 10px 20px;
     white-space: nowrap;
+    display: inline-block;
+    transition: color 0.3s ease 0s;
+    
+
+    &:hover{
+      color: red;
+      transition: all 0.3s ease 0s;
+    }
   }
 }
+
+.info__all{
+  display: inline-block;
+  border: solid black 1px;
+  padding: 15px;
+  margin-top: 40px;
+  width: 250px;
+  
+  transition: all 0.3s ease 0s;
+    
+
+  &:hover{
+    color: red;
+    border: solid red 1px;
+    transition: all 0.3s ease 0s;
+  }
+}
+
+.lenta {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  // align-items: center;
+
+  max-width: $maxWidth + px;
+  // .lenta__label
+
+  &__label {
+    display: inline-block;
+    font-size: calc(24px + 8 * (100vw / 1280));
+    width: 30vw;
+    border-top: solid red 10px;;
+  }
+
+  // .lenta__cards
+
+  &__cards {
+    display: flex;
+    
+  }
+
+  // .lenta__card
+
+  &__card {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    
+    &:hover{
+      span{
+      color: red;
+      transition: all 0.3s ease 0s;
+      }
+    }
+
+    span{
+      display: block;
+      position: absolute;
+
+      color: white;
+      font-weight: bold;
+      margin: 20px;
+      font-size: calc(24px + 2 * (100vw / 1280));
+    }
+
+  }
+
+  .fashion-show {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/fashion-show.jpg") center;
+
+  }
+  .art-media {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/art-media.jpg") center;
+  }
+  .card-news {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), red;
+    p{
+      margin: 50% 10% 0 10%;
+      text-align: left;
+      color: white;
+      
+    }
+    p.time{
+      margin: 10% 0 10% 10%;
+      color: inherit;
+      font-weight: bold;
+    }
+  }
+  .card-concurs {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("../img/concours.jpg") center;
+    
+  }
+
+  
+}
+
+
